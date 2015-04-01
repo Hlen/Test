@@ -1,0 +1,1704 @@
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.app.ActivityCompat
+android.support.v4.app.ActivityCompatHoneycomb:
+    27:27:ActivityCompatHoneycomb()
+    34:35:static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    static final int OP_DETACH
+    static final int OP_ATTACH
+    296:296:public int getId()
+    300:300:public int getBreadCrumbTitleRes()
+    304:304:public int getBreadCrumbShortTitleRes()
+    308:311:public java.lang.CharSequence getBreadCrumbTitle()
+    315:318:public java.lang.CharSequence getBreadCrumbShortTitle()
+    337:338:public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    342:343:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    347:348:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    352:376:private void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int)
+    379:379:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    383:388:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    392:397:public android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    401:406:public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    410:415:public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    419:424:public android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment)
+    428:433:public android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment)
+    437:437:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    442:446:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    450:451:public android.support.v4.app.FragmentTransaction setTransition(int)
+    455:456:public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    460:466:public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    470:470:public boolean isAddToBackStackAllowed()
+    474:479:public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    483:485:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    489:491:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    495:497:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    501:503:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    532:532:public int commit()
+    536:536:public int commitAllowingStateLoss()
+    540:549:int commitInternal(boolean)
+    727:727:public int getTransition()
+    731:731:public int getTransitionStyle()
+    735:735:public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STOPPED
+    static final int STARTED
+    static final int RESUMED
+    465:465:public final int getId()
+    472:472:public final java.lang.String getTag()
+    483:487:public void setArguments(android.os.Bundle)
+    494:494:public final android.os.Bundle getArguments()
+    506:511:public void setInitialSavedState(android.support.v4.app.Fragment$SavedState)
+    525:527:public void setTargetFragment(android.support.v4.app.Fragment,int)
+    533:533:public final android.support.v4.app.Fragment getTargetFragment()
+    540:540:public final int getTargetRequestCode()
+    554:557:public final android.content.res.Resources getResources()
+    567:567:public final java.lang.CharSequence getText(int)
+    577:577:public final java.lang.String getString(int)
+    590:590:public final varargs java.lang.String getString(int,java.lang.Object[])
+    601:601:public final android.support.v4.app.FragmentManager getFragmentManager()
+    608:608:public final boolean isAdded()
+    617:617:public final boolean isDetached()
+    626:626:public final boolean isRemoving()
+    637:637:public final boolean isInLayout()
+    645:645:public final boolean isResumed()
+    654:654:public final boolean isVisible()
+    666:666:public final boolean isHidden()
+    694:695:public void setRetainInstance(boolean)
+    698:698:public final boolean getRetainInstance()
+    709:715:public void setHasOptionsMenu(boolean)
+    727:733:public void setMenuVisibility(boolean)
+    749:754:public void setUserVisibleHint(boolean)
+    761:761:public boolean getUserVisibleHint()
+    768:776:public android.support.v4.app.LoaderManager getLoaderManager()
+    784:788:public void startActivity(android.content.Intent)
+    795:799:public void startActivityForResult(android.content.Intent,int)
+    950:950:public android.view.View getView()
+    1222:1223:public void registerForContextMenu(android.view.View)
+    1233:1234:public void unregisterForContextMenu(android.view.View)
+android.support.v4.app.Fragment$SavedState:
+    295:297:Fragment$SavedState(android.os.Bundle)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    static final int MSG_RESUME_PENDING
+    69:122:public FragmentActivity()
+    576:578:public java.lang.Object getLastCustomNonConfigurationInstance()
+    680:680:public android.support.v4.app.FragmentManager getSupportFragmentManager()
+    700:708:public void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int)
+    729:734:public android.support.v4.app.LoaderManager getSupportLoaderManager()
+android.support.v4.app.FragmentActivity$1
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+    122:122:FragmentActivity$FragmentTag()
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    59:114:public FragmentManager()
+    public abstract android.support.v4.app.FragmentTransaction beginTransaction()
+    139:139:public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract boolean executePendingTransactions()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract android.support.v4.app.Fragment findFragmentByTag(java.lang.String)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String)
+    public abstract android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    334:335:public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+    377:417:FragmentManagerImpl()
+    426:426:public android.support.v4.app.FragmentTransaction beginTransaction()
+    436:441:public void popBackStack()
+    452:457:public void popBackStack(java.lang.String,int)
+    461:463:public boolean popBackStackImmediate(java.lang.String,int)
+    468:476:public void popBackStack(int,int)
+    480:485:public boolean popBackStackImmediate(int,int)
+    490:490:public int getBackStackEntryCount()
+    495:495:public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    500:504:public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    508:511:public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    542:550:public android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    1301:1309:public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+    1324:1340:public void enqueueAction(java.lang.Runnable,boolean)
+    1343:1359:public int allocBackStackIndex(android.support.v4.app.BackStackRecord)
+android.support.v4.app.FragmentManagerImpl$1
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentPagerAdapter
+android.support.v4.app.FragmentStatePagerAdapter
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public abstract int commit()
+    public abstract int commitAllowingStateLoss()
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    177:178:public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    boolean mCreatingLoader
+    486:489:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    495:500:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    505:512:void installLoader(android.support.v4.app.LoaderManagerImpl$LoaderInfo)
+    540:562:public android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    590:644:public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    655:675:public void destroyLoader(int)
+    683:694:public android.support.v4.content.Loader getLoader(int)
+android.support.v4.app.LoaderManagerImpl$LoaderInfo:
+    226:230:public LoaderManagerImpl$LoaderInfo(android.support.v4.app.LoaderManagerImpl,int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    360:413:public void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.app.NavUtils
+android.support.v4.app.NavUtils$NavUtilsImpl
+android.support.v4.app.NavUtils$NavUtilsImplBase
+android.support.v4.app.NavUtils$NavUtilsImplJB
+android.support.v4.app.NavUtilsJB
+android.support.v4.app.NotificationCompat:
+    public static final int FLAG_HIGH_PRIORITY
+    29:75:public NotificationCompat()
+android.support.v4.app.NotificationCompat$Builder:
+    113:114:public android.support.v4.app.NotificationCompat$Builder setWhen(long)
+    140:142:public android.support.v4.app.NotificationCompat$Builder setSmallIcon(int,int)
+    167:168:public android.support.v4.app.NotificationCompat$Builder setNumber(int)
+    175:176:public android.support.v4.app.NotificationCompat$Builder setContentInfo(java.lang.CharSequence)
+    195:196:public android.support.v4.app.NotificationCompat$Builder setContent(android.widget.RemoteViews)
+    220:221:public android.support.v4.app.NotificationCompat$Builder setDeleteIntent(android.app.PendingIntent)
+    238:240:public android.support.v4.app.NotificationCompat$Builder setFullScreenIntent(android.app.PendingIntent,boolean)
+    248:249:public android.support.v4.app.NotificationCompat$Builder setTicker(java.lang.CharSequence)
+    258:260:public android.support.v4.app.NotificationCompat$Builder setTicker(java.lang.CharSequence,android.widget.RemoteViews)
+    267:268:public android.support.v4.app.NotificationCompat$Builder setLargeIcon(android.graphics.Bitmap)
+    275:277:public android.support.v4.app.NotificationCompat$Builder setSound(android.net.Uri)
+    287:289:public android.support.v4.app.NotificationCompat$Builder setSound(android.net.Uri,int)
+    299:300:public android.support.v4.app.NotificationCompat$Builder setVibrate(long[])
+    309:315:public android.support.v4.app.NotificationCompat$Builder setLights(int,int,int)
+    339:340:public android.support.v4.app.NotificationCompat$Builder setOnlyAlertOnce(boolean)
+android.support.v4.app.NotificationCompatHoneycomb:
+    25:25:NotificationCompatHoneycomb()
+android.support.v4.app.ServiceCompat
+android.support.v4.app.ShareCompat
+android.support.v4.app.ShareCompat$IntentBuilder
+android.support.v4.app.ShareCompat$IntentReader
+android.support.v4.app.ShareCompat$ShareCompatImpl
+android.support.v4.app.ShareCompat$ShareCompatImplBase
+android.support.v4.app.ShareCompat$ShareCompatImplICS
+android.support.v4.app.ShareCompat$ShareCompatImplJB
+android.support.v4.app.ShareCompatICS
+android.support.v4.app.ShareCompatJB
+android.support.v4.app.TaskStackBuilder
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImpl
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplBase
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplHoneycomb
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplJellybean
+android.support.v4.app.TaskStackBuilderHoneycomb
+android.support.v4.app.TaskStackBuilderJellybean
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.ContextCompat
+android.support.v4.content.ContextCompatHoneycomb
+android.support.v4.content.ContextCompatJellybean
+android.support.v4.content.CursorLoader
+android.support.v4.content.IntentCompat
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    90:92:public Loader(android.content.Context)
+    102:105:public void deliverResult(java.lang.Object)
+    111:111:public android.content.Context getContext()
+    118:118:public int getId()
+    157:157:public boolean isStarted()
+    166:166:public boolean isAbandoned()
+    175:175:public boolean isReset()
+    217:218:public void forceLoad()
+    225:225:protected void onForceLoad()
+    261:263:public void abandon()
+    275:275:protected void onAbandon()
+    312:314:public boolean takeContentChanged()
+    326:334:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    static final int MSG_EXEC_PENDING_BROADCASTS
+    164:188:public void unregisterReceiver(android.content.BroadcastReceiver)
+    277:280:public void sendBroadcastSync(android.content.Intent)
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.net.ConnectivityManagerCompat
+android.support.v4.net.ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompatGingerbread
+android.support.v4.net.ConnectivityManagerCompatHoneycombMR2
+android.support.v4.net.ConnectivityManagerCompatJellyBean
+android.support.v4.net.TrafficStatsCompat
+android.support.v4.net.TrafficStatsCompat$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags
+android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompatIcs
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LongSparseArray
+android.support.v4.util.LruCache
+android.support.v4.util.SparseArrayCompat:
+    107:111:public void removeAtRange(int,int)
+    236:241:public void setValueAt(int,java.lang.Object)
+    249:253:public int indexOfKey(int)
+    265:273:public int indexOfValue(java.lang.Object)
+    296:323:public void append(int,java.lang.Object)
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.AccessibilityDelegateCompatJellyBean
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$1
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean
+android.support.v4.view.KeyEventCompat:
+    25:95:public KeyEventCompat()
+    127:127:public static int normalizeMetaState(int)
+    131:131:public static boolean metaStateHasModifiers(int,int)
+    135:135:public static boolean metaStateHasNoModifiers(int)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl:
+    98:98:public int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+    26:26:public static int normalizeMetaState(int)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    public static final int ACTION_HOVER_ENTER
+    public static final int ACTION_HOVER_EXIT
+    25:75:public MotionEventCompat()
+    174:174:public static int getActionMasked(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    78:79:public PagerAdapter()
+    276:277:public void notifyDataSetChanged()
+    297:297:public java.lang.CharSequence getPageTitle(int)
+android.support.v4.view.PagerTabStrip
+android.support.v4.view.PagerTabStrip$1
+android.support.v4.view.PagerTabStrip$2
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip$1
+android.support.v4.view.PagerTitleStrip$PageListener
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplBase
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplIcs
+android.support.v4.view.PagerTitleStripIcs
+android.support.v4.view.PagerTitleStripIcs$SingleLineAllCapsTransform
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+    91:91:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl:
+    44:44:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl:
+    58:58:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl:
+    public abstract float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+    29:29:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    private static final long FAKE_FRAME_TIME
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_AUTO
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_YES
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_NO
+    29:186:public ViewCompat()
+    264:264:public static boolean canScrollVertically(android.view.View,int)
+    293:294:public static void setOverScrollMode(android.view.View,int)
+    330:331:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    363:364:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    399:400:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    414:415:public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    426:426:public static boolean hasTransientState(android.view.View)
+    437:438:public static void setHasTransientState(android.view.View,boolean)
+    468:469:public static void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    482:483:public static void postOnAnimation(android.view.View,java.lang.Runnable)
+    499:500:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    515:515:public static int getImportantForAccessibility(android.view.View)
+    531:532:public static void setImportantForAccessibility(android.view.View,int)
+    558:558:public static android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    89:89:public boolean canScrollVertically(android.view.View,int)
+    96:96:public void setOverScrollMode(android.view.View,int)
+    99:99:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    102:102:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    105:105:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    108:108:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    111:111:public boolean hasTransientState(android.view.View)
+    115:115:public void setHasTransientState(android.view.View,boolean)
+    120:121:public void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    123:124:public void postOnAnimation(android.view.View,java.lang.Runnable)
+    126:127:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    132:132:public int getImportantForAccessibility(android.view.View)
+    136:136:public void setImportantForAccessibility(android.view.View,int)
+    138:138:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    149:150:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    166:166:public boolean canScrollVertically(android.view.View,int)
+    170:171:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    174:175:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    178:179:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    182:183:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$JBViewCompatImpl:
+    189:189:public boolean hasTransientState(android.view.View)
+    193:194:public void setHasTransientState(android.view.View,boolean)
+    201:202:public void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    205:206:public void postOnAnimation(android.view.View,java.lang.Runnable)
+    209:210:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    213:213:public int getImportantForAccessibility(android.view.View)
+    217:218:public void setImportantForAccessibility(android.view.View,int)
+    221:225:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    public abstract boolean hasTransientState(android.view.View)
+    public abstract void setHasTransientState(android.view.View,boolean)
+    public abstract void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    public abstract void postOnAnimation(android.view.View,java.lang.Runnable)
+    public abstract void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    public abstract int getImportantForAccessibility(android.view.View)
+    public abstract void setImportantForAccessibility(android.view.View,int)
+    public abstract android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatHC:
+    21:21:ViewCompatHC()
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    38:39:public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewCompatJB:
+    24:24:public ViewCompatJB()
+    27:27:public static boolean hasTransientState(android.view.View)
+    31:32:public static void setHasTransientState(android.view.View,boolean)
+    40:41:public static void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    44:45:public static void postOnAnimation(android.view.View,java.lang.Runnable)
+    48:49:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    52:52:public static int getImportantForAccessibility(android.view.View)
+    56:57:public static void setImportantForAccessibility(android.view.View,int)
+    60:60:public static java.lang.Object getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewConfigurationCompat
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompatFroyo
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int DEFAULT_GUTTER_SIZE
+    private boolean mIgnoreGutter
+    private static final int INVALID_POINTER
+    private static final int CLOSE_ENOUGH
+    private long mFakeDragBeginTime
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    296:298:public ViewPager(android.content.Context)
+    301:303:public ViewPager(android.content.Context,android.util.AttributeSet)
+    306:330:void initViewPager()
+    514:516:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    638:639:void smoothScrollTo(int,int)
+    2025:2041:public boolean beginFakeDrag()
+    2051:2072:public void endFakeDrag()
+    2082:2120:public void fakeDragBy(float)
+    2132:2132:public boolean isFakeDragging()
+    82:82:static synthetic android.support.v4.view.PagerAdapter access$100(android.support.v4.view.ViewPager)
+    82:82:static synthetic int access$200(android.support.v4.view.ViewPager)
+android.support.v4.view.ViewPager$MyAccessibilityDelegate
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcsMr1
+android.support.v4.view.accessibility.AccessibilityRecordCompatJellyBean
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.EdgeEffectCompat:
+    132:134:public EdgeEffectCompat(android.content.Context)
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    60:60:public java.lang.Object newEdgeEffect(android.content.Context)
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    92:92:public java.lang.Object newEdgeEffect(android.content.Context)
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract java.lang.Object newEdgeEffect(android.content.Context)
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    30:30:public static java.lang.Object newEdgeEffect(android.content.Context)
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.ScrollerCompat
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs
+android.support.v4.widget.ScrollerCompatIcs
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+com.novell.sasl.client.DigestChallenge:
+    public static final int QOP_AUTH
+    public static final int QOP_AUTH_INT
+    public static final int QOP_AUTH_CONF
+    public static final int QOP_UNRECOGNIZED
+    private static final int CIPHER_3DES
+    private static final int CIPHER_DES
+    private static final int CIPHER_RC4_40
+    private static final int CIPHER_RC4
+    private static final int CIPHER_RC4_56
+    private static final int CIPHER_UNRECOGNIZED
+    private static final int CIPHER_RECOGNIZED_MASK
+    358:358:public boolean getStaleFlag()
+    366:366:public int getMaxBuf()
+    374:374:public java.lang.String getCharacterSet()
+    390:390:public int getCipherOptions()
+com.novell.sasl.client.DigestMD5SaslClient:
+    private static final int STATE_INITIAL
+    private static final int STATE_DIGEST_RESPONSE_SENT
+    private static final int STATE_VALID_SERVER_RESPONSE
+    private static final int STATE_INVALID_SERVER_RESPONSE
+    private static final int STATE_DISPOSED
+    private static final int NONCE_BYTE_COUNT
+    private static final int NONCE_HEX_COUNT
+    private static final java.lang.String DIGEST_METHOD
+    208:213:public boolean isComplete()
+    242:242:public byte[] unwrap(byte[],int,int)
+    275:275:public byte[] wrap(byte[],int,int)
+    295:302:public java.lang.Object getNegotiatedProperty(java.lang.String)
+    316:320:public void dispose()
+    816:816:public java.lang.String getMechanismName()
+com.novell.sasl.client.DirectiveList:
+    private static final int STATE_LOOKING_FOR_FIRST_DIRECTIVE
+    private static final int STATE_LOOKING_FOR_DIRECTIVE
+    private static final int STATE_SCANNING_NAME
+    private static final int STATE_LOOKING_FOR_EQUALS
+    private static final int STATE_LOOKING_FOR_VALUE
+    private static final int STATE_LOOKING_FOR_COMMA
+    private static final int STATE_SCANNING_QUOTED_STRING_VALUE
+    private static final int STATE_SCANNING_TOKEN_VALUE
+    private static final int STATE_NO_UTF8_SUPPORT
+    private java.lang.String m_curName
+com.novell.sasl.client.ParsedDirective:
+    public static final int QUOTED_STRING_VALUE
+    public static final int TOKEN_VALUE
+    52:52:int getValueType()
+com.novell.sasl.client.TokenParser:
+    private static final int STATE_LOOKING_FOR_FIRST_TOKEN
+    private static final int STATE_LOOKING_FOR_TOKEN
+    private static final int STATE_SCANNING_TOKEN
+    private static final int STATE_LOOKING_FOR_COMMA
+    private static final int STATE_PARSING_ERROR
+    private static final int STATE_DONE
+de.measite.smack.AndroidDebugger:
+    private java.text.SimpleDateFormat dateFormatter
+    43:48:public AndroidDebugger(org.jivesoftware.smack.Connection,java.io.Writer,java.io.Reader)
+    55:135:private void createDebug()
+    31:31:static synthetic java.text.SimpleDateFormat access$0(de.measite.smack.AndroidDebugger)
+    33:33:static synthetic org.jivesoftware.smack.Connection access$1(de.measite.smack.AndroidDebugger)
+de.measite.smack.AndroidDebugger$1
+de.measite.smack.AndroidDebugger$2
+de.measite.smack.AndroidDebugger$3
+de.measite.smack.AndroidDebugger$4
+de.measite.smack.Sasl:
+    private static final java.lang.String CLIENTFACTORYSRV
+    private static final java.lang.String SERVERFACTORYSRV
+    public static final java.lang.String POLICY_NOPLAINTEXT
+    public static final java.lang.String POLICY_NOACTIVE
+    public static final java.lang.String POLICY_NODICTIONARY
+    public static final java.lang.String POLICY_NOANONYMOUS
+    public static final java.lang.String POLICY_FORWARD_SECRECY
+    public static final java.lang.String POLICY_PASS_CREDENTIALS
+    public static final java.lang.String MAX_BUFFER
+    public static final java.lang.String RAW_SEND_SIZE
+    public static final java.lang.String REUSE
+    public static final java.lang.String QOP
+    public static final java.lang.String STRENGTH
+    public static final java.lang.String SERVER_AUTH
+    29:29:public Sasl()
+    68:68:public static java.util.Enumeration getSaslServerFactories()
+    73:73:public static org.apache.harmony.javax.security.sasl.SaslServer createSaslServer(java.lang.String,java.lang.String,java.lang.String,java.util.Map,org.apache.harmony.javax.security.auth.callback.CallbackHandler)
+javax.jmdns.JmDNS:
+    public static final java.lang.String VERSION
+    81:81:public static javax.jmdns.JmDNS create(java.net.InetAddress)
+    102:102:public static javax.jmdns.JmDNS create(java.lang.String)
+    137:137:public static javax.jmdns.JmDNS create(java.net.InetAddress,java.lang.String)
+    public abstract java.lang.String getName()
+    public abstract java.lang.String getHostName()
+    public abstract java.net.InetAddress getInterface()
+    public abstract javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String)
+    public abstract javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String,long)
+    public abstract javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String,boolean)
+    public abstract javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String,boolean,long)
+    public abstract void requestServiceInfo(java.lang.String,java.lang.String)
+    public abstract void requestServiceInfo(java.lang.String,java.lang.String,boolean)
+    public abstract void requestServiceInfo(java.lang.String,java.lang.String,long)
+    public abstract void requestServiceInfo(java.lang.String,java.lang.String,boolean,long)
+    public abstract void addServiceTypeListener(javax.jmdns.ServiceTypeListener)
+    public abstract void removeServiceTypeListener(javax.jmdns.ServiceTypeListener)
+    public abstract void registerService(javax.jmdns.ServiceInfo)
+    public abstract void unregisterService(javax.jmdns.ServiceInfo)
+    public abstract void unregisterAllServices()
+    public abstract boolean registerServiceType(java.lang.String)
+    public abstract void printServices()
+    public abstract javax.jmdns.ServiceInfo[] list(java.lang.String)
+    public abstract javax.jmdns.ServiceInfo[] list(java.lang.String,long)
+    public abstract java.util.Map listBySubtype(java.lang.String)
+    public abstract java.util.Map listBySubtype(java.lang.String,long)
+    public abstract javax.jmdns.JmDNS$Delegate getDelegate()
+    public abstract javax.jmdns.JmDNS$Delegate setDelegate(javax.jmdns.JmDNS$Delegate)
+javax.jmdns.JmmDNS
+javax.jmdns.JmmDNS$Factory
+javax.jmdns.JmmDNS$Factory$ClassDelegate
+javax.jmdns.NetworkTopologyDiscovery:
+    public abstract boolean useInetAddress(java.net.NetworkInterface,java.net.InetAddress)
+    public abstract void lockInetAddress(java.net.InetAddress)
+    public abstract void unlockInetAddress(java.net.InetAddress)
+javax.jmdns.NetworkTopologyDiscovery$Factory:
+    89:90:public static void setClassDelegate(javax.jmdns.NetworkTopologyDiscovery$Factory$ClassDelegate)
+    100:100:public static javax.jmdns.NetworkTopologyDiscovery$Factory$ClassDelegate classDelegate()
+javax.jmdns.NetworkTopologyEvent
+javax.jmdns.NetworkTopologyListener
+javax.jmdns.ServiceEvent:
+    private static final long serialVersionUID
+javax.jmdns.ServiceInfo:
+    80:80:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,java.lang.String)
+    99:99:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String)
+    120:120:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,int,int,java.lang.String)
+    143:143:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,int,int,java.lang.String)
+    164:164:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,int,int,java.util.Map)
+    187:187:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,int,int,java.util.Map)
+    208:208:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,int,int,byte[])
+    231:231:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,int,int,byte[])
+    254:254:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,int,int,boolean,java.lang.String)
+    279:279:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,int,int,boolean,java.lang.String)
+    302:302:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,int,int,boolean,java.util.Map)
+    327:327:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,int,int,boolean,java.util.Map)
+    350:350:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,int,int,int,boolean,byte[])
+    375:375:public static javax.jmdns.ServiceInfo create(java.lang.String,java.lang.String,java.lang.String,int,int,int,boolean,byte[])
+    396:396:public static javax.jmdns.ServiceInfo create(java.util.Map,int,int,int,boolean,java.util.Map)
+    public abstract java.lang.String getTypeWithSubtype()
+    public abstract java.lang.String getKey()
+    public abstract java.lang.String getHostAddress()
+    public abstract java.lang.String[] getHostAddresses()
+    public abstract java.net.InetAddress getAddress()
+    public abstract java.net.InetAddress getInetAddress()
+    public abstract java.net.Inet4Address getInet4Address()
+    public abstract java.net.Inet6Address getInet6Address()
+    public abstract java.lang.String getTextString()
+    public abstract java.lang.String getURL()
+    public abstract java.lang.String getURL(java.lang.String)
+    public abstract java.lang.String[] getURLs(java.lang.String)
+    public abstract byte[] getPropertyBytes(java.lang.String)
+    public abstract java.lang.String getPropertyString(java.lang.String)
+    public abstract java.util.Enumeration getPropertyNames()
+    public abstract void setText(byte[])
+    public abstract void setText(java.util.Map)
+    public abstract java.util.Map getQualifiedNameMap()
+javax.jmdns.impl.DNSCache$_CacheEntry:
+    171:176:protected DNSCache$_CacheEntry(java.util.Map$Entry)
+    210:210:public boolean isEmpty()
+javax.jmdns.impl.DNSEntry:
+    public abstract boolean isStale(long)
+javax.jmdns.impl.DNSIncoming$MessageInputStream:
+    55:55:public int readByte()
+    111:111:protected synchronized int peek()
+javax.jmdns.impl.DNSMessage:
+    public static final boolean MULTICAST
+    public static final boolean UNICAST
+    208:208:public boolean isResponse()
+javax.jmdns.impl.DNSOutgoing:
+    private static final int HEADER_SIZE
+    206:207:public DNSOutgoing(int,boolean)
+    316:325:public void addAdditionalAnswer(javax.jmdns.impl.DNSIncoming,javax.jmdns.impl.DNSRecord)
+    367:372:java.lang.String print(boolean)
+javax.jmdns.impl.DNSOutgoing$MessageOutputStream:
+    50:53:void writeBytes(java.lang.String,int,int)
+    56:59:void writeBytes(byte[])
+javax.jmdns.impl.DNSQuestion:
+    296:296:public boolean isStale(long)
+javax.jmdns.impl.DNSRecord:
+    abstract javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.JmDNSImpl,javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing)
+    1019:1020:public void setTTL(int)
+javax.jmdns.impl.DNSRecord$Address:
+    283:286:boolean same(javax.jmdns.impl.DNSRecord)
+    385:385:javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.JmDNSImpl,javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing)
+javax.jmdns.impl.DNSRecord$HostInformation:
+    872:872:javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.JmDNSImpl,javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing)
+javax.jmdns.impl.DNSRecord$Pointer:
+    485:485:javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.JmDNSImpl,javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing)
+javax.jmdns.impl.DNSRecord$Service:
+    795:802:javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.JmDNSImpl,javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing)
+javax.jmdns.impl.DNSRecord$Text:
+    601:601:javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.JmDNSImpl,javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing)
+javax.jmdns.impl.DNSStatefulObject:
+    public abstract javax.jmdns.impl.JmDNSImpl getDns()
+    public abstract void associateWithTask(javax.jmdns.impl.tasks.DNSTask,javax.jmdns.impl.constants.DNSState)
+    public abstract void removeAssociationWithTask(javax.jmdns.impl.tasks.DNSTask)
+    public abstract boolean isAssociatedWithTask(javax.jmdns.impl.tasks.DNSTask,javax.jmdns.impl.constants.DNSState)
+    public abstract boolean revertState()
+    public abstract boolean cancelState()
+    public abstract boolean closeState()
+    public abstract boolean recoverState()
+    public abstract boolean isProbing()
+    public abstract boolean isAnnouncing()
+    public abstract boolean isAnnounced()
+    public abstract boolean isCanceling()
+    public abstract boolean isCanceled()
+    public abstract boolean isClosing()
+    public abstract boolean isClosed()
+    public abstract boolean waitForAnnounced(long)
+    public abstract boolean waitForCanceled(long)
+javax.jmdns.impl.DNSStatefulObject$DefaultImplementation:
+    private static final long serialVersionUID
+javax.jmdns.impl.DNSTaskStarter:
+    public abstract void startTypeResolver()
+javax.jmdns.impl.DNSTaskStarter$DNSTaskStarterImpl:
+    366:367:public void startTypeResolver()
+javax.jmdns.impl.DNSTaskStarter$DNSTaskStarterImpl$StarterTimer:
+    169:171:public DNSTaskStarter$DNSTaskStarterImpl$StarterTimer(boolean)
+    186:188:public DNSTaskStarter$DNSTaskStarterImpl$StarterTimer(java.lang.String)
+javax.jmdns.impl.DNSTaskStarter$Factory:
+    74:75:public static void setClassDelegate(javax.jmdns.impl.DNSTaskStarter$Factory$ClassDelegate)
+    85:85:public static javax.jmdns.impl.DNSTaskStarter$Factory$ClassDelegate classDelegate()
+javax.jmdns.impl.HostInfo:
+    293:293:public javax.jmdns.impl.JmDNSImpl getDns()
+    373:373:public boolean isAnnouncing()
+javax.jmdns.impl.HostInfo$HostInfoState:
+    private static final long serialVersionUID
+javax.jmdns.impl.JmDNSImpl:
+    365:381:public static void main(java.lang.String[])
+    600:600:public boolean isAnnouncing()
+    681:681:public java.lang.String getHostName()
+    706:706:public javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String)
+    714:714:public javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String,long)
+    722:722:public javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String,boolean)
+    730:732:public javax.jmdns.ServiceInfo getServiceInfo(java.lang.String,java.lang.String,boolean,long)
+    811:827:private void waitForInfoData(javax.jmdns.ServiceInfo,long)
+    834:835:public void requestServiceInfo(java.lang.String,java.lang.String)
+    842:843:public void requestServiceInfo(java.lang.String,java.lang.String,boolean)
+    850:851:public void requestServiceInfo(java.lang.String,java.lang.String,long)
+    858:860:public void requestServiceInfo(java.lang.String,java.lang.String,boolean,long)
+    889:898:public void addServiceTypeListener(javax.jmdns.ServiceTypeListener)
+    905:907:public void removeServiceTypeListener(javax.jmdns.ServiceTypeListener)
+    1023:1037:public void unregisterService(javax.jmdns.ServiceInfo)
+    1500:1514:public javax.jmdns.impl.DNSOutgoing addAnswer(javax.jmdns.impl.DNSIncoming,java.net.InetAddress,int,javax.jmdns.impl.DNSOutgoing,javax.jmdns.impl.DNSRecord)
+    1641:1642:public void startTypeResolver()
+    1849:1850:public void printServices()
+    1903:1903:public javax.jmdns.ServiceInfo[] list(java.lang.String)
+    1911:1939:public javax.jmdns.ServiceInfo[] list(java.lang.String,long)
+    1947:1947:public java.util.Map listBySubtype(java.lang.String)
+    1955:1970:public java.util.Map listBySubtype(java.lang.String,long)
+    2183:2184:public void setPlannedAnswer(javax.jmdns.impl.DNSIncoming)
+    2187:2187:public javax.jmdns.impl.DNSIncoming getPlannedAnswer()
+    2191:2192:void setLocalHost(javax.jmdns.impl.HostInfo)
+    2213:2215:public javax.jmdns.JmDNS$Delegate setDelegate(javax.jmdns.JmDNS$Delegate)
+javax.jmdns.impl.JmDNSImpl$ServiceCollector:
+    2087:2104:public javax.jmdns.ServiceInfo[] list(long)
+javax.jmdns.impl.JmDNSImpl$ServiceTypeEntry:
+    258:258:public java.util.Iterator iterator()
+javax.jmdns.impl.JmDNSImpl$ServiceTypeEntry$SubTypeEntry:
+    private static final long serialVersionUID
+javax.jmdns.impl.JmDNSImpl$Shutdown
+javax.jmdns.impl.JmmDNSImpl
+javax.jmdns.impl.JmmDNSImpl$1
+javax.jmdns.impl.JmmDNSImpl$2
+javax.jmdns.impl.JmmDNSImpl$3
+javax.jmdns.impl.JmmDNSImpl$4
+javax.jmdns.impl.JmmDNSImpl$5
+javax.jmdns.impl.JmmDNSImpl$6
+javax.jmdns.impl.JmmDNSImpl$NetworkChecker
+javax.jmdns.impl.ListenerStatus:
+    public static final boolean SYNCHONEOUS
+    public static final boolean ASYNCHONEOUS
+javax.jmdns.impl.ListenerStatus$ServiceTypeListenerStatus:
+    165:167:public ListenerStatus$ServiceTypeListenerStatus(javax.jmdns.ServiceTypeListener,boolean)
+javax.jmdns.impl.NameRegister
+javax.jmdns.impl.NameRegister$Factory
+javax.jmdns.impl.NameRegister$NameType
+javax.jmdns.impl.NameRegister$UniqueNameAcrossInterface
+javax.jmdns.impl.NameRegister$UniqueNamePerInterface
+javax.jmdns.impl.NetworkTopologyDiscoveryImpl:
+    121:121:public void lockInetAddress(java.net.InetAddress)
+    130:130:public void unlockInetAddress(java.net.InetAddress)
+javax.jmdns.impl.NetworkTopologyEventImpl
+javax.jmdns.impl.ServiceEventImpl:
+    private static final long serialVersionUID
+javax.jmdns.impl.ServiceInfoImpl:
+    private javax.jmdns.impl.ServiceInfoImpl$Delegate _delegate
+    128:137:public ServiceInfoImpl(java.lang.String,java.lang.String,java.lang.String,int,int,int,boolean,java.lang.String)
+    151:152:public ServiceInfoImpl(java.lang.String,java.lang.String,java.lang.String,int,int,int,boolean,java.util.Map)
+    459:460:public java.lang.String getHostAddress()
+    468:477:public java.lang.String[] getHostAddresses()
+    502:502:public java.net.InetAddress getAddress()
+    511:512:public java.net.InetAddress getInetAddress()
+    521:522:public java.net.Inet4Address getInet4Address()
+    531:532:public java.net.Inet6Address getInet6Address()
+    603:611:public java.lang.String getTextString()
+    621:621:public java.lang.String getURL()
+    640:641:public java.lang.String getURL(java.lang.String)
+    672:672:public synchronized byte[] getPropertyBytes(java.lang.String)
+    695:697:public java.util.Enumeration getPropertyNames()
+    981:981:public boolean closeState()
+    1045:1045:public boolean isCanceling()
+    1053:1053:public boolean isCanceled()
+    1061:1061:public boolean isClosing()
+    1069:1069:public boolean isClosed()
+    1205:1210:public void setText(byte[])
+    1217:1218:public void setText(java.util.Map)
+    1312:1312:javax.jmdns.impl.ServiceInfoImpl$Delegate getDelegate()
+    1320:1321:void setDelegate(javax.jmdns.impl.ServiceInfoImpl$Delegate)
+javax.jmdns.impl.ServiceInfoImpl$Delegate
+javax.jmdns.impl.ServiceInfoImpl$ServiceInfoState:
+    private static final long serialVersionUID
+javax.jmdns.impl.SocketListener:
+    78:78:public javax.jmdns.impl.JmDNSImpl getDns()
+javax.jmdns.impl.constants.DNSConstants:
+    public static final java.lang.String MDNS_GROUP
+    public static final java.lang.String MDNS_GROUP_IPV6
+    public static final int DNS_PORT
+    public static final int DNS_TTL
+    public static final int MAX_MSG_TYPICAL
+    public static final int MAX_MSG_ABSOLUTE
+    public static final int FLAGS_QR_MASK
+    public static final int FLAGS_QR_QUERY
+    public static final int FLAGS_QR_RESPONSE
+    public static final int FLAGS_AA
+    public static final int FLAGS_TC
+    public static final int FLAGS_RD
+    public static final int FLAGS_RA
+    public static final int FLAGS_Z
+    public static final int FLAGS_AD
+    public static final int FLAGS_CD
+    public static final int SHARED_QUERY_TIME
+    public static final int QUERY_WAIT_INTERVAL
+    public static final int PROBE_WAIT_INTERVAL
+    public static final int RESPONSE_MIN_WAIT_INTERVAL
+    public static final int RESPONSE_MAX_WAIT_INTERVAL
+    public static final int PROBE_CONFLICT_INTERVAL
+    public static final int PROBE_THROTTLE_COUNT
+    public static final int PROBE_THROTTLE_COUNT_INTERVAL
+    public static final int ANNOUNCE_WAIT_INTERVAL
+    public static final int RECORD_REAPER_INTERVAL
+    public static final int RECORD_EXPIRY_DELAY
+    public static final int KNOWN_ANSWER_TTL
+    public static final int ANNOUNCED_RENEWAL_TTL_INTERVAL
+    public static final long CLOSE_TIMEOUT
+    public static final long SERVICE_INFO_TIMEOUT
+    public static final int NETWORK_CHECK_INTERVAL
+    12:12:public DNSConstants()
+javax.jmdns.impl.constants.DNSLabel:
+    static final int LABEL_MASK
+    static final int LABEL_NOT_MASK
+    50:50:public java.lang.String externalName()
+javax.jmdns.impl.constants.DNSOperationCode
+javax.jmdns.impl.constants.DNSOptionCode:
+    49:49:public java.lang.String externalName()
+javax.jmdns.impl.constants.DNSRecordClass:
+    public static final int CLASS_MASK
+    public static final int CLASS_UNIQUE
+    public static final boolean UNIQUE
+    public static final boolean NOT_UNIQUE
+    83:83:public java.lang.String externalName()
+    110:117:public static javax.jmdns.impl.constants.DNSRecordClass classForName(java.lang.String)
+javax.jmdns.impl.constants.DNSRecordType:
+    268:268:public java.lang.String externalName()
+    285:292:public static javax.jmdns.impl.constants.DNSRecordType typeForName(java.lang.String)
+javax.jmdns.impl.constants.DNSResultCode:
+    static final int RCode_MASK
+    static final int ExtendedRCode_MASK
+    112:112:public java.lang.String externalName()
+    129:133:public static javax.jmdns.impl.constants.DNSResultCode resultCodeForFlags(int)
+javax.jmdns.impl.tasks.DNSTask:
+    public abstract void start(java.util.Timer)
+    204:220:public javax.jmdns.impl.DNSOutgoing addAdditionalAnswer(javax.jmdns.impl.DNSOutgoing,javax.jmdns.impl.DNSIncoming,javax.jmdns.impl.DNSRecord)
+javax.jmdns.impl.tasks.resolver.TypeResolver
+javax.jmdns.impl.tasks.state.DNSStateTask:
+    51:52:public static void setDefaultTTL(int)
+org.MediaPlayer.PlayM4.Constants
+org.MediaPlayer.PlayM4.Player:
+    private static final java.lang.String TAG
+    private static final int CPU_NEON
+    private static final int CPU_ARMv7
+    private static final int CPU_NOT_ARMv7
+    private static final int CPU_NOT_ARM
+    public static final int STREAM_REALTIME
+    public static final int STREAM_FILE
+    public static final int VOLUME_MAX
+    public static final int VOLUME_DEFAULT
+    public static final int VOLUME_MUTE
+    public static final int MAX_PORT
+    public static final int MAX_REGION_NUM
+    public static final int PLAYM4_OK
+    public static final int PLAYM4_FAIL
+    184:211:public boolean openFile(int,java.lang.String)
+    223:227:public boolean closeFile(int)
+    270:274:public boolean stop(int)
+    300:300:public int getSdkVersion()
+    475:475:public int getCurrentFrameRate(int)
+    491:495:public boolean getBMP(int,byte[],int,org.MediaPlayer.PlayM4.Player$MPInteger)
+    544:548:public boolean fast(int)
+    560:564:public boolean slow(int)
+    575:575:public long getFileTime(int)
+    586:586:public int getFileTotalFrames(int)
+    597:597:public float getPlayPos(int)
+    610:614:public boolean setPlayPos(int,float)
+    625:625:public int getPlayedTime(int)
+    636:636:public int getPlayedTimeEx(int)
+    649:658:public boolean setPlayedTimeEx(int,int)
+    669:669:public int getPlayedFrames(int)
+    680:680:public int getCurrentFrameNum(int)
+    693:697:public boolean setCurrentFrameNum(int,int)
+    708:708:public int getSourceBufferRemain(int)
+    720:724:public boolean resetSourceBuffer(int)
+    735:735:public int getDisplayBuf(int)
+    748:752:public boolean setDisplayBuf(int,int)
+    767:786:public boolean setDisplayRegion(int,int,org.MediaPlayer.PlayM4.Player$MPRect,android.view.SurfaceHolder,int)
+    799:803:public boolean resetBuffer(int,int)
+    815:815:public int getBufferValue(int,int)
+    828:832:public boolean setDecodeFrameType(int,int)
+    863:867:public boolean setFileEndCB(int,org.MediaPlayer.PlayM4.PlayerCallBack$PlayerPlayEndCB)
+    897:901:public boolean setDecodeCB(int,org.MediaPlayer.PlayM4.PlayerCallBack$PlayerDecodeCB)
+    914:918:public boolean setFileRefCB(int,org.MediaPlayer.PlayM4.PlayerCallBack$PlayerFileRefCB)
+    922:922:public boolean verticalFlip(int,int)
+    926:930:public boolean setImageCorrection(int,int)
+    private native int OpenFile(int,byte[])
+    private native int CloseFile(int)
+    private native int GetSdkVersion()
+    private native int Stop(int)
+    private native int Fast(int)
+    private native int Slow(int)
+    private native long GetFileTime(int)
+    private native int GetFileTotalFrames(int)
+    private native float GetPlayPos(int)
+    private native int SetPlayPos(int,float)
+    private native int GetPlayedTime(int)
+    private native int GetPlayedTimeEx(int)
+    private native int SetPlayedTimeEx(int,int)
+    private native int GetPlayedFrames(int)
+    private native int GetCurrentFrameNum(int)
+    private native int SetCurrentFrameNum(int,int)
+    private native int GetCurrentFrameRate(int)
+    private native int GetSourceBufferRemain(int)
+    private native int ResetSourceBuffer(int)
+    private native int ResetSourceBufFlag(int)
+    private native int GetDisplayBuf(int)
+    private native int SetDisplayBuf(int,int)
+    private native int SetDisplayRegion(int,int,org.MediaPlayer.PlayM4.Player$MPRect,android.view.Surface,int)
+    private native int ResetBuffer(int,int)
+    private native int GetBufferValue(int,int)
+    private native int SetDecodeFrameType(int,int)
+    private native int GetBMP(int,byte[],int,org.MediaPlayer.PlayM4.Player$MPInteger)
+    private native int SetFileEndCallback(int,org.MediaPlayer.PlayM4.PlayerCallBack$PlayerPlayEndCB)
+    private native int SetDecodeCallback(int,org.MediaPlayer.PlayM4.PlayerCallBack$PlayerDecodeCB)
+    private native int SetFileRefCallBack(int,org.MediaPlayer.PlayM4.PlayerCallBack$PlayerFileRefCB)
+    private native int VerticalFlip(int,int)
+    private native int SetImageCorrection(int,int)
+org.MediaPlayer.PlayM4.Player$MPRect
+org.MediaPlayer.PlayM4.Player$MPSystemTime:
+    public int ms
+org.MediaPlayer.PlayM4.Player$MP_DECODE_TYPE
+org.MediaPlayer.PlayM4.PlayerCallBack:
+    11:11:public PlayerCallBack()
+org.MediaPlayer.PlayM4.PlayerCallBack$PlayerDecodeCB
+org.MediaPlayer.PlayM4.PlayerCallBack$PlayerDisplayCB:
+    public abstract void onDisplay(int,byte[],int,int,int,int,int,int)
+org.MediaPlayer.PlayM4.PlayerCallBack$PlayerFileRefCB
+org.MediaPlayer.PlayM4.PlayerCallBack$PlayerPlayEndCB
+org.apache.harmony.javax.security.auth.AuthPermission
+org.apache.harmony.javax.security.auth.DestroyFailedException
+org.apache.harmony.javax.security.auth.Destroyable
+org.apache.harmony.javax.security.auth.PrivateCredentialPermission
+org.apache.harmony.javax.security.auth.PrivateCredentialPermission$CredOwner
+org.apache.harmony.javax.security.auth.RefreshFailedException
+org.apache.harmony.javax.security.auth.Refreshable
+org.apache.harmony.javax.security.auth.Subject
+org.apache.harmony.javax.security.auth.Subject$1
+org.apache.harmony.javax.security.auth.Subject$2
+org.apache.harmony.javax.security.auth.Subject$3
+org.apache.harmony.javax.security.auth.Subject$SecureSet
+org.apache.harmony.javax.security.auth.Subject$SecureSet$1
+org.apache.harmony.javax.security.auth.Subject$SecureSet$2
+org.apache.harmony.javax.security.auth.Subject$SecureSet$SecureIterator
+org.apache.harmony.javax.security.auth.SubjectDomainCombiner
+org.apache.harmony.javax.security.auth.callback.ChoiceCallback:
+    private static final long serialVersionUID
+    76:76:public boolean allowMultipleSelections()
+    84:84:public int getDefaultChoice()
+    88:88:public java.lang.String getPrompt()
+    96:98:public void setSelectedIndex(int)
+    101:108:public void setSelectedIndexes(int[])
+org.apache.harmony.javax.security.auth.callback.ConfirmationCallback
+org.apache.harmony.javax.security.auth.callback.LanguageCallback
+org.apache.harmony.javax.security.auth.callback.NameCallback:
+    private static final long serialVersionUID
+    60:60:public java.lang.String getPrompt()
+org.apache.harmony.javax.security.auth.callback.PasswordCallback:
+    private static final long serialVersionUID
+    67:67:public java.lang.String getPrompt()
+    77:77:public boolean isEchoOn()
+org.apache.harmony.javax.security.auth.callback.TextInputCallback:
+    private static final long serialVersionUID
+    60:60:public java.lang.String getDefaultText()
+    64:64:public java.lang.String getPrompt()
+org.apache.harmony.javax.security.auth.callback.TextOutputCallback
+org.apache.harmony.javax.security.auth.callback.UnsupportedCallbackException:
+    private static final long serialVersionUID
+    52:54:public UnsupportedCallbackException(org.apache.harmony.javax.security.auth.callback.Callback,java.lang.String)
+    62:62:public org.apache.harmony.javax.security.auth.callback.Callback getCallback()
+org.apache.harmony.javax.security.auth.login.AccountException
+org.apache.harmony.javax.security.auth.login.AccountExpiredException
+org.apache.harmony.javax.security.auth.login.AccountLockedException
+org.apache.harmony.javax.security.auth.login.AccountNotFoundException
+org.apache.harmony.javax.security.auth.login.AppConfigurationEntry
+org.apache.harmony.javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag
+org.apache.harmony.javax.security.auth.login.Configuration
+org.apache.harmony.javax.security.auth.login.Configuration$1
+org.apache.harmony.javax.security.auth.login.CredentialException
+org.apache.harmony.javax.security.auth.login.CredentialExpiredException
+org.apache.harmony.javax.security.auth.login.CredentialNotFoundException
+org.apache.harmony.javax.security.auth.login.FailedLoginException
+org.apache.harmony.javax.security.auth.login.LoginContext
+org.apache.harmony.javax.security.auth.login.LoginContext$1
+org.apache.harmony.javax.security.auth.login.LoginContext$2
+org.apache.harmony.javax.security.auth.login.LoginContext$3
+org.apache.harmony.javax.security.auth.login.LoginContext$ContextedCallbackHandler
+org.apache.harmony.javax.security.auth.login.LoginContext$ContextedCallbackHandler$1
+org.apache.harmony.javax.security.auth.login.LoginContext$Module
+org.apache.harmony.javax.security.auth.login.LoginException
+org.apache.harmony.javax.security.auth.spi.LoginModule
+org.apache.harmony.javax.security.sasl.AuthenticationException
+org.apache.harmony.javax.security.sasl.AuthorizeCallback
+org.apache.harmony.javax.security.sasl.RealmCallback:
+    private static final long serialVersionUID
+org.apache.harmony.javax.security.sasl.RealmChoiceCallback:
+    private static final long serialVersionUID
+org.apache.harmony.javax.security.sasl.Sasl
+org.apache.harmony.javax.security.sasl.SaslClient:
+    public abstract void dispose()
+    public abstract java.lang.String getMechanismName()
+    public abstract java.lang.Object getNegotiatedProperty(java.lang.String)
+    public abstract boolean isComplete()
+    public abstract byte[] unwrap(byte[],int,int)
+    public abstract byte[] wrap(byte[],int,int)
+org.apache.harmony.javax.security.sasl.SaslClientFactory
+org.apache.harmony.javax.security.sasl.SaslException:
+    private static final long serialVersionUID
+org.apache.harmony.javax.security.sasl.SaslServer
+org.apache.harmony.javax.security.sasl.SaslServerFactory
+org.apache.qpid.management.common.sasl.CRAMMD5HashedSaslClientFactory
+org.apache.qpid.management.common.sasl.ClientSaslFactory
+org.apache.qpid.management.common.sasl.Constants
+org.apache.qpid.management.common.sasl.JCAProvider
+org.apache.qpid.management.common.sasl.PlainSaslClient:
+    91:91:public java.lang.String getMechanismName()
+    101:101:public boolean isComplete()
+    106:110:public byte[] unwrap(byte[],int,int)
+    117:124:public byte[] wrap(byte[],int,int)
+    131:144:public java.lang.Object getNegotiatedProperty(java.lang.String)
+    163:164:public void dispose()
+org.apache.qpid.management.common.sasl.SaslProvider
+org.apache.qpid.management.common.sasl.UserPasswordCallbackHandler
+org.apache.qpid.management.common.sasl.UsernameHashedPasswordCallbackHandler
+org.jivesoftware.smack.AccountManager:
+    87:101:public boolean supportsAccountCreation()
+    131:143:public java.util.Collection getAccountAttributes()
+    156:164:public java.lang.String getAccountAttribute(java.lang.String)
+    176:182:public java.lang.String getAccountInstructions()
+    199:208:public void createAccount(java.lang.String,java.lang.String)
+    224:248:public void createAccount(java.lang.String,java.lang.String,java.util.Map)
+    259:277:public void changePassword(java.lang.String)
+    288:309:public void deleteAccount()
+    317:335:private synchronized void getRegistrationInfo()
+org.jivesoftware.smack.BOSHConfiguration
+org.jivesoftware.smack.Connection:
+    236:236:public java.lang.String getCapsNode()
+    public abstract java.lang.String getUser()
+    public abstract boolean isAuthenticated()
+    public abstract boolean isAnonymous()
+    public abstract boolean isSecureConnection()
+    303:303:protected boolean isReconnectionAllowed()
+    public abstract boolean isUsingCompression()
+    public abstract void connect()
+    349:350:public void login(java.lang.String,java.lang.String)
+    public abstract void login(java.lang.String,java.lang.String,java.lang.String)
+    public abstract void loginAnonymously()
+    public abstract org.jivesoftware.smack.Roster getRoster()
+    public abstract void setRosterStorage(org.jivesoftware.smack.RosterStorage)
+    483:484:public static void addConnectionCreationListener(org.jivesoftware.smack.ConnectionCreationListener)
+    493:494:public static void removeConnectionCreationListener(org.jivesoftware.smack.ConnectionCreationListener)
+    530:531:public void removeConnectionListener(org.jivesoftware.smack.ConnectionListener)
+    607:607:protected java.util.Map getPacketListeners()
+    635:636:public void removePacketSendingListener(org.jivesoftware.smack.PacketListener)
+    644:644:protected java.util.Map getPacketSendingListeners()
+    671:675:public void addPacketInterceptor(org.jivesoftware.smack.PacketInterceptor,org.jivesoftware.smack.filter.PacketFilter)
+    683:684:public void removePacketInterceptor(org.jivesoftware.smack.PacketInterceptor)
+    687:687:public boolean isSendPresence()
+    696:696:protected java.util.Map getPacketInterceptors()
+org.jivesoftware.smack.Connection$InterceptorWrapper:
+    832:835:public Connection$InterceptorWrapper(org.jivesoftware.smack.PacketInterceptor,org.jivesoftware.smack.filter.PacketFilter)
+org.jivesoftware.smack.ConnectionConfiguration:
+    105:110:public ConnectionConfiguration(java.lang.String)
+    121:125:public ConnectionConfiguration(java.lang.String,org.jivesoftware.smack.proxy.ProxyInfo)
+    141:143:public ConnectionConfiguration(java.lang.String,int,java.lang.String)
+    160:162:public ConnectionConfiguration(java.lang.String,int,java.lang.String,org.jivesoftware.smack.proxy.ProxyInfo)
+    183:185:public ConnectionConfiguration(java.lang.String,int,org.jivesoftware.smack.proxy.ProxyInfo)
+    301:302:public void setTruststorePath(java.lang.String)
+    319:320:public void setTruststoreType(java.lang.String)
+    339:340:public void setTruststorePassword(java.lang.String)
+    361:362:public void setKeystorePath(java.lang.String)
+    379:380:public void setKeystoreType(java.lang.String)
+    400:401:public void setPKCS11Library(java.lang.String)
+    422:423:public void setVerifyChainEnabled(boolean)
+    460:461:public void setSelfSignedCertificateEnabled(boolean)
+    482:483:public void setExpiredCertificatesCheckEnabled(boolean)
+    504:505:public void setNotMatchingDomainCheckEnabled(boolean)
+    572:573:public void setDebuggerEnabled(boolean)
+    582:583:public void setReconnectionAllowed(boolean)
+    591:591:public boolean isReconnectionAllowed()
+    601:602:public void setSocketFactory(javax.net.SocketFactory)
+    613:614:public void setSendPresence(boolean)
+    635:636:public void setRosterLoadedAtLogin(boolean)
+    661:662:public void setCallbackHandler(org.apache.harmony.javax.security.auth.callback.CallbackHandler)
+    741:741:java.lang.String getCapsNode()
+org.jivesoftware.smack.ConnectionListener:
+    public abstract void reconnectingIn(int)
+    public abstract void reconnectionFailed(java.lang.Exception)
+org.jivesoftware.smack.KeepAliveListener:
+    public abstract void onClose()
+org.jivesoftware.smack.NonSASLAuthentication:
+    49:54:public java.lang.String authenticate(java.lang.String,java.lang.String,org.apache.harmony.javax.security.auth.callback.CallbackHandler)
+org.jivesoftware.smack.OpenTrustManager
+org.jivesoftware.smack.PacketCollector:
+    private static final int MAX_PACKETS
+    89:89:public org.jivesoftware.smack.filter.PacketFilter getPacketFilter()
+    101:101:public org.jivesoftware.smack.packet.Packet pollResult()
+    113:111:public org.jivesoftware.smack.packet.Packet nextResult()
+org.jivesoftware.smack.PacketWriter:
+    private java.lang.Thread keepAliveThread
+    140:149:public void startKeepAliveProcess(org.jivesoftware.smack.KeepAliveListener)
+    55:55:static synthetic boolean access$0(org.jivesoftware.smack.PacketWriter)
+    51:51:static synthetic java.lang.Thread access$1(org.jivesoftware.smack.PacketWriter)
+    62:62:static synthetic long access$2(org.jivesoftware.smack.PacketWriter)
+    53:53:static synthetic org.jivesoftware.smack.XMPPConnection access$4(org.jivesoftware.smack.PacketWriter)
+org.jivesoftware.smack.PacketWriter$KeepAliveTask
+org.jivesoftware.smack.PrivacyList
+org.jivesoftware.smack.PrivacyListListener
+org.jivesoftware.smack.PrivacyListManager
+org.jivesoftware.smack.PrivacyListManager$1
+org.jivesoftware.smack.PrivacyListManager$2
+org.jivesoftware.smack.PrivacyListManager$3
+org.jivesoftware.smack.PrivacyListManager$3$1
+org.jivesoftware.smack.ReconnectionManager
+org.jivesoftware.smack.ReconnectionManager$1
+org.jivesoftware.smack.ReconnectionManager$2
+org.jivesoftware.smack.Roster:
+    95:96:public static void setDefaultSubscriptionMode(org.jivesoftware.smack.Roster$SubscriptionMode)
+    165:165:public org.jivesoftware.smack.Roster$SubscriptionMode getSubscriptionMode()
+    180:181:public void setSubscriptionMode(org.jivesoftware.smack.Roster$SubscriptionMode)
+    206:209:public void addRosterListener(org.jivesoftware.smack.RosterListener)
+    218:219:public void removeRosterListener(org.jivesoftware.smack.RosterListener)
+    251:280:public void createEntry(java.lang.String,java.lang.String,java.lang.String[])
+    283:291:private void insertRosterItems(java.util.List)
+    415:436:public void removeEntry(org.jivesoftware.smack.RosterEntry)
+    444:444:public int getEntryCount()
+    454:462:public java.util.Collection getEntries()
+    472:472:public int getUnfiledEntryCount()
+    482:482:public java.util.Collection getUnfiledEntries()
+    529:529:public int getGroupCount()
+    570:614:public org.jivesoftware.smack.packet.Presence getPresence(java.lang.String)
+    629:645:public org.jivesoftware.smack.packet.Presence getPresenceResource(java.lang.String)
+    662:682:public java.util.Iterator getPresences(java.lang.String)
+org.jivesoftware.smack.Roster$1:
+    140:140:public void reconnectingIn(int)
+    144:144:public void reconnectionFailed(java.lang.Exception)
+org.jivesoftware.smack.RosterEntry:
+    77:77:public java.lang.String getName()
+    87:95:public void setName(java.lang.String)
+    105:108:void updateState(java.lang.String,org.jivesoftware.smack.packet.RosterPacket$ItemType,org.jivesoftware.smack.packet.RosterPacket$ItemStatus)
+    136:136:public org.jivesoftware.smack.packet.RosterPacket$ItemType getType()
+    147:147:public org.jivesoftware.smack.packet.RosterPacket$ItemStatus getStatus()
+    185:192:static org.jivesoftware.smack.packet.RosterPacket$Item toRosterItem(org.jivesoftware.smack.RosterEntry)
+org.jivesoftware.smack.RosterGroup:
+    75:86:public void setName(java.lang.String)
+    105:105:public java.util.Collection getEntries()
+    118:132:public org.jivesoftware.smack.RosterEntry getEntry(java.lang.String)
+    154:154:public boolean contains(java.lang.String)
+    167:193:public void addEntry(org.jivesoftware.smack.RosterEntry)
+    206:235:public void removeEntry(org.jivesoftware.smack.RosterEntry)
+org.jivesoftware.smack.RosterStorage:
+    public abstract org.jivesoftware.smack.packet.RosterPacket$Item getEntry(java.lang.String)
+    public abstract int getEntryCount()
+    public abstract void updateLocalEntry(org.jivesoftware.smack.packet.RosterPacket$Item)
+org.jivesoftware.smack.SASLAuthentication:
+    124:126:public static void unregisterSASLMechanism(java.lang.String)
+    137:138:public static void supportSASLMechanism(java.lang.String)
+    162:163:public static void unsupportSASLMechanism(java.lang.String)
+    171:175:public static java.util.List getRegisterSASLMechanisms()
+    503:503:public boolean isAuthenticated()
+org.jivesoftware.smack.SmackConfiguration:
+    private static final java.lang.String SMACK_VERSION
+    148:152:public static void setPacketReplyTimeout(int)
+    163:163:public static int getKeepAliveInterval()
+    175:176:public static void setKeepAliveInterval(int)
+    184:187:public static void addSaslMech(java.lang.String)
+    195:198:public static void addSaslMechs(java.util.Collection)
+    206:209:public static void removeSaslMech(java.lang.String)
+    217:220:public static void removeSaslMechs(java.util.Collection)
+    230:230:public static java.util.List getSaslMechs()
+org.jivesoftware.smack.UserAuthentication
+org.jivesoftware.smack.XMPPConnection:
+    128:133:public XMPPConnection(java.lang.String,org.apache.harmony.javax.security.auth.callback.CallbackHandler)
+    145:149:public XMPPConnection(java.lang.String)
+    183:185:public XMPPConnection(org.jivesoftware.smack.ConnectionConfiguration,org.apache.harmony.javax.security.auth.callback.CallbackHandler)
+    195:198:public java.lang.String getUser()
+    366:396:public org.jivesoftware.smack.Roster getRoster()
+    519:520:public void addPacketWriterInterceptor(org.jivesoftware.smack.PacketInterceptor,org.jivesoftware.smack.filter.PacketFilter)
+    529:530:public void removePacketWriterInterceptor(org.jivesoftware.smack.PacketInterceptor)
+    545:546:public void addPacketWriterListener(org.jivesoftware.smack.PacketListener,org.jivesoftware.smack.filter.PacketFilter)
+    555:556:public void removePacketWriterListener(org.jivesoftware.smack.PacketListener)
+    899:899:public boolean isUsingCompression()
+    1043:1047:public void setRosterStorage(org.jivesoftware.smack.RosterStorage)
+org.jivesoftware.smack.XMPPException:
+    72:74:public XMPPException(java.lang.Throwable)
+    144:144:public org.jivesoftware.smack.packet.XMPPError getXMPPError()
+    155:155:public org.jivesoftware.smack.packet.StreamError getStreamError()
+    165:165:public java.lang.Throwable getWrappedThrowable()
+org.jivesoftware.smack.debugger.ConsoleDebugger:
+    private java.text.SimpleDateFormat dateFormatter
+    40:45:public ConsoleDebugger(org.jivesoftware.smack.Connection,java.io.Writer,java.io.Reader)
+    52:132:private void createDebug()
+    28:28:static synthetic java.text.SimpleDateFormat access$0(org.jivesoftware.smack.debugger.ConsoleDebugger)
+    30:30:static synthetic org.jivesoftware.smack.Connection access$1(org.jivesoftware.smack.debugger.ConsoleDebugger)
+org.jivesoftware.smack.debugger.ConsoleDebugger$1
+org.jivesoftware.smack.debugger.ConsoleDebugger$2
+org.jivesoftware.smack.debugger.ConsoleDebugger$3
+org.jivesoftware.smack.debugger.ConsoleDebugger$4
+org.jivesoftware.smack.filter.AndFilter
+org.jivesoftware.smack.filter.FromContainsFilter
+org.jivesoftware.smack.filter.FromMatchesFilter
+org.jivesoftware.smack.filter.IQTypeFilter
+org.jivesoftware.smack.filter.MessageTypeFilter
+org.jivesoftware.smack.filter.NotFilter
+org.jivesoftware.smack.filter.OrFilter
+org.jivesoftware.smack.filter.PacketExtensionFilter
+org.jivesoftware.smack.filter.ThreadFilter
+org.jivesoftware.smack.filter.ToContainsFilter
+org.jivesoftware.smack.packet.Authentication:
+    54:54:public java.lang.String getUsername()
+org.jivesoftware.smack.packet.Bind:
+    44:44:public java.lang.String getResource()
+org.jivesoftware.smack.packet.Message:
+    71:73:public Message(java.lang.String)
+    81:84:public Message(java.lang.String,org.jivesoftware.smack.packet.Message$Type)
+    93:93:public org.jivesoftware.smack.packet.Message$Type getType()
+    120:120:public java.lang.String getSubject()
+    163:168:public void setSubject(java.lang.String)
+    192:198:public boolean removeSubject(java.lang.String)
+    208:208:public boolean removeSubject(org.jivesoftware.smack.packet.Message$Subject)
+    217:224:public java.util.Collection getSubjectLanguages()
+    238:238:public java.lang.String getBody()
+    282:287:public void setBody(java.lang.String)
+    312:318:public boolean removeBody(java.lang.String)
+    329:329:public boolean removeBody(org.jivesoftware.smack.packet.Message$Body)
+    339:346:public java.util.Collection getBodyLanguages()
+    356:356:public java.lang.String getThread()
+org.jivesoftware.smack.packet.Presence:
+    84:89:public Presence(org.jivesoftware.smack.packet.Presence$Type,java.lang.String,int,org.jivesoftware.smack.packet.Presence$Mode)
+    103:103:public boolean isAvailable()
+    117:117:public boolean isAway()
+    168:168:public int getPriority()
+    193:193:public org.jivesoftware.smack.packet.Presence$Mode getMode()
+org.jivesoftware.smack.packet.Privacy
+org.jivesoftware.smack.packet.PrivacyItem
+org.jivesoftware.smack.packet.PrivacyItem$PrivacyRule
+org.jivesoftware.smack.packet.PrivacyItem$Type
+org.jivesoftware.smack.packet.Registration:
+    67:67:public java.lang.String getInstructions()
+    85:85:public java.util.Map getAttributes()
+    93:93:public java.util.List getRequiredFields()
+    105:105:public boolean isRegistered()
+    109:109:public java.lang.String getField(java.lang.String)
+    113:113:public java.util.List getFieldNames()
+    117:118:public void setUsername(java.lang.String)
+    121:122:public void setPassword(java.lang.String)
+    125:126:public void setRemove(boolean)
+org.jivesoftware.smack.packet.RosterPacket:
+    66:66:public int getRosterItemCount()
+org.jivesoftware.smack.packet.RosterPacket$Item:
+    148:149:public void setName(java.lang.String)
+    212:213:public void removeGroupName(java.lang.String)
+org.jivesoftware.smack.packet.StreamError:
+    98:98:public java.lang.String getCode()
+org.jivesoftware.smack.packet.XMPPError:
+    104:107:public XMPPError(int)
+    117:120:public XMPPError(int,java.lang.String)
+    165:165:public java.lang.String getCondition()
+    174:174:public org.jivesoftware.smack.packet.XMPPError$Type getType()
+    183:183:public int getCode()
+    192:192:public java.lang.String getMessage()
+    260:268:public synchronized org.jivesoftware.smack.packet.PacketExtension getExtension(java.lang.String,java.lang.String)
+    277:281:public synchronized void addExtension(org.jivesoftware.smack.packet.PacketExtension)
+    289:290:public synchronized void setExtension(java.util.List)
+org.jivesoftware.smack.packet.XMPPError$ErrorSpecification:
+    432:432:protected org.jivesoftware.smack.packet.XMPPError$Condition getCondition()
+org.jivesoftware.smack.provider.PrivacyProvider
+org.jivesoftware.smack.provider.ProviderManager:
+    148:152:public static synchronized void setInstance(org.jivesoftware.smack.provider.ProviderManager)
+    296:296:public java.util.Collection getIQProviders()
+    330:332:public void removeIQProvider(java.lang.String,java.lang.String)
+    370:376:public void addExtensionProvider(java.lang.String,java.lang.String,java.lang.Object)
+    387:389:public void removeExtensionProvider(java.lang.String,java.lang.String)
+    399:399:public java.util.Collection getExtensionProviders()
+org.jivesoftware.smack.proxy.ProxyInfo:
+    34:34:public static org.jivesoftware.smack.proxy.ProxyInfo forHttpProxy(java.lang.String,int,java.lang.String,java.lang.String)
+    39:39:public static org.jivesoftware.smack.proxy.ProxyInfo forSocks4Proxy(java.lang.String,int,java.lang.String,java.lang.String)
+    44:44:public static org.jivesoftware.smack.proxy.ProxyInfo forSocks5Proxy(java.lang.String,int,java.lang.String,java.lang.String)
+    48:48:public static org.jivesoftware.smack.proxy.ProxyInfo forNoProxy()
+    56:56:public org.jivesoftware.smack.proxy.ProxyInfo$ProxyType getProxyType()
+org.jivesoftware.smack.sasl.SASLCramMD5Mechanism:
+    32:33:public SASLCramMD5Mechanism(org.jivesoftware.smack.SASLAuthentication)
+org.jivesoftware.smack.sasl.SASLDigestMD5Mechanism:
+    32:33:public SASLDigestMD5Mechanism(org.jivesoftware.smack.SASLAuthentication)
+org.jivesoftware.smack.sasl.SASLExternalMechanism:
+    53:54:public SASLExternalMechanism(org.jivesoftware.smack.SASLAuthentication)
+org.jivesoftware.smack.sasl.SASLGSSAPIMechanism:
+    40:45:public SASLGSSAPIMechanism(org.jivesoftware.smack.SASLAuthentication)
+org.jivesoftware.smack.sasl.SASLMechanism$Failure:
+    312:312:public java.lang.String getCondition()
+org.jivesoftware.smack.sasl.SASLPlainMechanism:
+    28:29:public SASLPlainMechanism(org.jivesoftware.smack.SASLAuthentication)
+org.jivesoftware.smack.util.Base64:
+    public static final int NO_OPTIONS
+    public static final int ENCODE
+    public static final int DECODE
+    public static final int GZIP
+    public static final int DONT_BREAK_LINES
+    public static final int URL_SAFE
+    public static final int ORDERED
+    private static final int MAX_LINE_LENGTH
+    private static final byte EQUALS_SIGN
+    private static final byte NEW_LINE
+    private static final java.lang.String PREFERRED_ENCODING
+    private static final byte WHITE_SPACE_ENC
+    private static final byte EQUALS_SIGN_ENC
+    363:363:private Base64()
+    373:390:public static final void main(java.lang.String[])
+    399:401:private static final void usage(java.lang.String)
+    516:516:public static java.lang.String encodeObject(java.io.Serializable)
+    547:593:public static java.lang.String encodeObject(java.io.Serializable,int)
+    651:651:public static java.lang.String encodeBytes(byte[],int,int)
+    1033:1062:public static java.lang.Object decodeToObject(java.lang.String)
+    1078:1097:public static boolean encodeToFile(byte[],java.lang.String)
+    1112:1130:public static boolean decodeToFile(java.lang.String,java.lang.String)
+    1147:1188:public static byte[] decodeFromFile(java.lang.String)
+    1204:1236:public static java.lang.String encodeFromFile(java.lang.String)
+    1248:1262:public static void encodeFileToFile(java.lang.String,java.lang.String)
+    1274:1288:public static void decodeFileToFile(java.lang.String,java.lang.String)
+    452:452:static synthetic byte[] access$2(byte[],int,int,byte[],int,int)
+org.jivesoftware.smack.util.Base64$InputStream
+org.jivesoftware.smack.util.Base64$OutputStream:
+    1561:1562:public Base64$OutputStream(java.io.OutputStream)
+    1744:1746:public void suspendEncoding()
+    1758:1759:public void resumeEncoding()
+org.jivesoftware.smack.util.Cache
+org.jivesoftware.smack.util.Cache$1
+org.jivesoftware.smack.util.Cache$1$1
+org.jivesoftware.smack.util.Cache$2
+org.jivesoftware.smack.util.Cache$2$1
+org.jivesoftware.smack.util.Cache$2$1$1
+org.jivesoftware.smack.util.Cache$CacheObject
+org.jivesoftware.smack.util.Cache$LinkedList
+org.jivesoftware.smack.util.Cache$LinkedListNode
+org.jivesoftware.smack.util.DNSUtil
+org.jivesoftware.smack.util.DNSUtil$HostAddress
+org.jivesoftware.smack.util.PacketParserUtils:
+    private static final java.lang.String PROPERTIES_NAMESPACE
+    47:47:public PacketParserUtils()
+org.jivesoftware.smack.util.StringUtils:
+    163:189:public static java.lang.String escapeNode(java.lang.String)
+    224:269:public static java.lang.String unescapeNode(java.lang.String)
+    414:421:public static java.lang.String encodeBase64(java.lang.String)
+    509:511:private StringUtils()
+org.jivesoftware.smack.util.collections.AbstractEmptyIterator
+org.jivesoftware.smack.util.collections.AbstractHashedMap
+org.jivesoftware.smack.util.collections.AbstractHashedMap$EntrySet
+org.jivesoftware.smack.util.collections.AbstractHashedMap$EntrySetIterator
+org.jivesoftware.smack.util.collections.AbstractHashedMap$HashEntry
+org.jivesoftware.smack.util.collections.AbstractHashedMap$HashIterator
+org.jivesoftware.smack.util.collections.AbstractHashedMap$HashMapIterator
+org.jivesoftware.smack.util.collections.AbstractHashedMap$KeySet
+org.jivesoftware.smack.util.collections.AbstractHashedMap$KeySetIterator
+org.jivesoftware.smack.util.collections.AbstractHashedMap$Values
+org.jivesoftware.smack.util.collections.AbstractHashedMap$ValuesIterator
+org.jivesoftware.smack.util.collections.AbstractKeyValue
+org.jivesoftware.smack.util.collections.AbstractMapEntry
+org.jivesoftware.smack.util.collections.AbstractReferenceMap
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceEntry
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceEntrySet
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceEntrySetIterator
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceIteratorBase
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceKeySet
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceKeySetIterator
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceMapIterator
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceValues
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$ReferenceValuesIterator
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$SoftRef
+org.jivesoftware.smack.util.collections.AbstractReferenceMap$WeakRef
+org.jivesoftware.smack.util.collections.DefaultMapEntry
+org.jivesoftware.smack.util.collections.EmptyIterator
+org.jivesoftware.smack.util.collections.EmptyMapIterator
+org.jivesoftware.smack.util.collections.IterableMap
+org.jivesoftware.smack.util.collections.KeyValue
+org.jivesoftware.smack.util.collections.MapIterator
+org.jivesoftware.smack.util.collections.ReferenceMap
+org.jivesoftware.smack.util.collections.ResettableIterator
+org.xbill.DNS.A6Record
+org.xbill.DNS.AAAARecord
+org.xbill.DNS.AFSDBRecord
+org.xbill.DNS.APLRecord
+org.xbill.DNS.APLRecord$Element
+org.xbill.DNS.ARecord
+org.xbill.DNS.Address
+org.xbill.DNS.CERTRecord
+org.xbill.DNS.CERTRecord$CertificateType
+org.xbill.DNS.CNAMERecord
+org.xbill.DNS.Cache
+org.xbill.DNS.Cache$CacheMap
+org.xbill.DNS.Cache$CacheRRset
+org.xbill.DNS.Cache$Element
+org.xbill.DNS.Cache$NegativeElement
+org.xbill.DNS.Client
+org.xbill.DNS.Compression
+org.xbill.DNS.Compression$Entry
+org.xbill.DNS.Credibility
+org.xbill.DNS.DClass
+org.xbill.DNS.DClass$DClassMnemonic
+org.xbill.DNS.DHCIDRecord
+org.xbill.DNS.DLVRecord
+org.xbill.DNS.DNAMERecord
+org.xbill.DNS.DNSInput
+org.xbill.DNS.DNSKEYRecord
+org.xbill.DNS.DNSKEYRecord$Flags
+org.xbill.DNS.DNSKEYRecord$Protocol
+org.xbill.DNS.DNSOutput
+org.xbill.DNS.DNSSEC
+org.xbill.DNS.DNSSEC$Algorithm
+org.xbill.DNS.DNSSEC$DNSSECException
+org.xbill.DNS.DNSSEC$IncompatibleKeyException
+org.xbill.DNS.DNSSEC$KeyMismatchException
+org.xbill.DNS.DNSSEC$MalformedKeyException
+org.xbill.DNS.DNSSEC$SignatureExpiredException
+org.xbill.DNS.DNSSEC$SignatureNotYetValidException
+org.xbill.DNS.DNSSEC$SignatureVerificationException
+org.xbill.DNS.DNSSEC$UnsupportedAlgorithmException
+org.xbill.DNS.DSRecord
+org.xbill.DNS.DSRecord$Digest
+org.xbill.DNS.EmptyRecord
+org.xbill.DNS.ExtendedFlags
+org.xbill.DNS.ExtendedResolver
+org.xbill.DNS.ExtendedResolver$Resolution
+org.xbill.DNS.Flags
+org.xbill.DNS.FormattedTime
+org.xbill.DNS.GPOSRecord
+org.xbill.DNS.Generator
+org.xbill.DNS.HINFORecord
+org.xbill.DNS.Header
+org.xbill.DNS.IPSECKEYRecord
+org.xbill.DNS.IPSECKEYRecord$Algorithm
+org.xbill.DNS.IPSECKEYRecord$Gateway
+org.xbill.DNS.ISDNRecord
+org.xbill.DNS.InvalidDClassException
+org.xbill.DNS.InvalidTTLException
+org.xbill.DNS.InvalidTypeException
+org.xbill.DNS.KEYBase
+org.xbill.DNS.KEYRecord
+org.xbill.DNS.KEYRecord$Flags
+org.xbill.DNS.KEYRecord$Protocol
+org.xbill.DNS.KXRecord
+org.xbill.DNS.LOCRecord
+org.xbill.DNS.Lookup
+org.xbill.DNS.MBRecord
+org.xbill.DNS.MDRecord
+org.xbill.DNS.MFRecord
+org.xbill.DNS.MGRecord
+org.xbill.DNS.MINFORecord
+org.xbill.DNS.MRRecord
+org.xbill.DNS.MXRecord
+org.xbill.DNS.Master
+org.xbill.DNS.Message
+org.xbill.DNS.Mnemonic
+org.xbill.DNS.NAPTRRecord
+org.xbill.DNS.NSAPRecord
+org.xbill.DNS.NSAP_PTRRecord
+org.xbill.DNS.NSEC3PARAMRecord
+org.xbill.DNS.NSEC3Record
+org.xbill.DNS.NSEC3Record$Digest
+org.xbill.DNS.NSEC3Record$Flags
+org.xbill.DNS.NSECRecord
+org.xbill.DNS.NSRecord
+org.xbill.DNS.NULLRecord
+org.xbill.DNS.NXTRecord
+org.xbill.DNS.Name
+org.xbill.DNS.NameTooLongException
+org.xbill.DNS.OPTRecord
+org.xbill.DNS.OPTRecord$Option
+org.xbill.DNS.Opcode
+org.xbill.DNS.Options
+org.xbill.DNS.PTRRecord
+org.xbill.DNS.PXRecord
+org.xbill.DNS.RPRecord
+org.xbill.DNS.RRSIGRecord
+org.xbill.DNS.RRset
+org.xbill.DNS.RTRecord
+org.xbill.DNS.Rcode
+org.xbill.DNS.Record
+org.xbill.DNS.RelativeNameException
+org.xbill.DNS.ResolveThread
+org.xbill.DNS.Resolver
+org.xbill.DNS.ResolverConfig
+org.xbill.DNS.ResolverListener
+org.xbill.DNS.ReverseMap
+org.xbill.DNS.SIG0
+org.xbill.DNS.SIGBase
+org.xbill.DNS.SIGRecord
+org.xbill.DNS.SOARecord
+org.xbill.DNS.SPFRecord
+org.xbill.DNS.SRVRecord
+org.xbill.DNS.SSHFPRecord
+org.xbill.DNS.SSHFPRecord$Algorithm
+org.xbill.DNS.SSHFPRecord$Digest
+org.xbill.DNS.Section
+org.xbill.DNS.Serial
+org.xbill.DNS.SetResponse
+org.xbill.DNS.SimpleResolver
+org.xbill.DNS.SingleCompressedNameBase
+org.xbill.DNS.SingleNameBase
+org.xbill.DNS.TCPClient
+org.xbill.DNS.TKEYRecord
+org.xbill.DNS.TSIG
+org.xbill.DNS.TSIG$StreamVerifier
+org.xbill.DNS.TSIGRecord
+org.xbill.DNS.TTL
+org.xbill.DNS.TXTBase
+org.xbill.DNS.TXTRecord
+org.xbill.DNS.TextParseException
+org.xbill.DNS.Tokenizer
+org.xbill.DNS.Tokenizer$Token
+org.xbill.DNS.Tokenizer$TokenizerException
+org.xbill.DNS.Type
+org.xbill.DNS.Type$TypeMnemonic
+org.xbill.DNS.TypeBitmap
+org.xbill.DNS.U16NameBase
+org.xbill.DNS.UDPClient
+org.xbill.DNS.UDPClient$1
+org.xbill.DNS.UNKRecord
+org.xbill.DNS.Update
+org.xbill.DNS.WKSRecord
+org.xbill.DNS.WKSRecord$Protocol
+org.xbill.DNS.WKSRecord$Service
+org.xbill.DNS.WireParseException
+org.xbill.DNS.X25Record
+org.xbill.DNS.Zone
+org.xbill.DNS.Zone$ZoneIterator
+org.xbill.DNS.ZoneTransferException
+org.xbill.DNS.ZoneTransferIn
+org.xbill.DNS.ZoneTransferIn$Delta
+org.xbill.DNS.spi.DNSJavaNameService
+org.xbill.DNS.tests.primary
+org.xbill.DNS.tests.xfrin
+org.xbill.DNS.utils.HMAC
+org.xbill.DNS.utils.base16
+org.xbill.DNS.utils.base32
+org.xbill.DNS.utils.base32$Alphabet
+org.xbill.DNS.utils.base64
+org.xbill.DNS.utils.hexdump
